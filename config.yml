@@ -1,0 +1,98 @@
+# ====================================================================
+#                     RoyalTab Configuration
+#        Designed for Paper 1.21.x (Java 21) - Royal SMP
+#        100% STANDALONE — ZERO RESOURCE PACKS REQUIRED
+# ====================================================================
+
+# Update interval in ticks (20 ticks = 1 second)
+update-interval: 20
+
+# Active logo style (choose from: "3D_BLOCK", "3D_TALL", "SMALL_CAPS", "ROYAL_CROWN")
+logo-style: "3D_BLOCK"
+
+# Header Configuration
+header:
+  - "&8&m                                                    &r"
+  - "%logo%"
+  - ""
+  - "<gray>ONLINE PLAYERS: <green>%online%</green></gray>"
+  - ""
+
+# Built-in Logo Designs (Native Unicode & MiniMessage - No texture packs needed!)
+logos:
+  # Style 1: 3D Block Art in Cyan with dark drop-shadow (Matches the screenshot aesthetic)
+  3D_BLOCK:
+    - "<gradient:#00FDFB:#008F8E><bold>█▀█ █▀█ █ █ █▀█ █  </bold></gradient>"
+    - "<gradient:#008F8E:#005577><bold>█▀▄ █▄█  █  █▀█ █▄▄</bold></gradient>"
+    - "<gradient:#FFFFFF:#AAAAAA><bold>     [ S M P ]</bold></gradient>"
+
+  # Style 2: Tall 3D Block Art
+  3D_TALL:
+    - "<gradient:#00FDFB:#008F8E><bold>█▀█ █▀█ █ █ █▀█ █  </bold></gradient>"
+    - "<gradient:#008F8E:#006677><bold>█▀▄ █ █  █  █▀█ █  </bold></gradient>"
+    - "<gradient:#006677:#004455><bold>▀ ▀ ▀▀▀  ▀  ▀ ▀ ▀▀▀</bold></gradient>"
+    - "<gradient:#FFFFFF:#CCCCCC><bold>    ✦  S M P  ✦</bold></gradient>"
+
+  # Style 3: Clean Modern Small-Caps Font with Cyan Gradient
+  SMALL_CAPS:
+    - "<gradient:#00FDFB:#008F8E><bold>✦ ʀ ᴏ ʏ ᴀ ʟ   ꜱ ᴍ ᴘ ✦</bold></gradient>"
+
+  # Style 4: Royal Crown Edition
+  ROYAL_CROWN:
+    - "<gradient:#FFD700:#FFA500><bold>      ♚ ROYAL ♚</bold></gradient>"
+    - "<gradient:#00FDFB:#008F8E><bold>   ― S M P ―   </bold></gradient>"
+
+# Player List Formatting & Rank Sorting
+player-list:
+  # Enable scoreboard team sorting (Founders and Staff sorted on top)
+  enable-sorting: true
+
+  # Ping bar icon settings
+  ping:
+    enabled: true
+    good-threshold: 80
+    medium-threshold: 160
+    good-icon: "<color:#55FF55>📶</color>"
+    medium-icon: "<color:#FFFF55>📶</color>"
+    bad-icon: "<color:#FF5555>📶</color>"
+
+  # Rank definitions: Matches LuckPerms primary group or permission (royaltab.<rank>)
+  ranks:
+    founder:
+      priority: 0
+      badge: "<color:#990000><bold>[</bold></color><color:#FF2222><bold>FOUNDER</bold></color><color:#990000><bold>]</bold></color> "
+      name-color: "<color:#FF2222>"
+      permission: "royaltab.founder"
+    admin:
+      priority: 1
+      badge: "<color:#995500><bold>[</bold></color><color:#FFAA00><bold>ADMIN</bold></color><color:#995500><bold>]</bold></color> "
+      name-color: "<color:#FFAA00>"
+      permission: "royaltab.admin_rank"
+    mod:
+      priority: 2
+      badge: "<color:#007700><bold>[</bold></color><color:#55FF55><bold>MOD</bold></color><color:#007700><bold>]</bold></color> "
+      name-color: "<color:#55FF55>"
+      permission: "royaltab.mod_rank"
+    vip:
+      priority: 3
+      badge: "<color:#887700><bold>[</bold></color><color:#FFFF55><bold>VIP</bold></color><color:#887700><bold>]</bold></color> "
+      name-color: "<color:#FFFF55>"
+      permission: "royaltab.vip_rank"
+    default:
+      priority: 9
+      badge: "<color:#555555>[</color><color:#AAAAAA>MEMBER</color><color:#555555>]</color> "
+      name-color: "<color:#CCCCCC>"
+      permission: ""
+
+# Footer Configuration
+footer:
+  - ""
+  - "<gray>WEBSTORE: <#00FDFB><bold>ROYALSMP.TEBEX.IO</bold></#00FDFB></gray>"
+  - "<gray>DISCORD: <#4D79FF><bold>DSC.GG/ROYALSMP</bold></#4D79FF></gray>"
+  - "&8&m                                                    &r"
+
+# Chat & Notification Messages
+messages:
+  prefix: "<gradient:#00FDFB:#008F8E>[RoyalTab]</gradient> "
+  reloaded: "<green>Configuration and tablist successfully reloaded!</green>"
+  no-permission: "<red>You do not have permission to use this command.</red>"

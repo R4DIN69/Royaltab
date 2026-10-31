@@ -1,0 +1,33 @@
+name: RoyalTab
+version: '${project.version}'
+main: com.royalsmp.tab.RoyalTab
+api-version: '1.21'
+author: Royal SMP
+description: Custom styled Tablist plugin for Royal SMP matching custom fonts and rank badges.
+softdepend:
+  - PlaceholderAPI
+  - LuckPerms
+
+commands:
+  royaltab:
+    description: RoyalTab main administrative command.
+    aliases: [rtab, royaltablist]
+    permission: royaltab.admin
+    usage: /royaltab reload
+
+permissions:
+  royaltab.admin:
+    description: Allows reloading the RoyalTab configuration.
+    default: op
+  royaltab.founder:
+    description: Assigns Founder styling in tablist if LuckPerms is not used.
+    default: op
+  royaltab.admin_rank:
+    description: Assigns Admin styling in tablist.
+    default: op
+  royaltab.mod_rank:
+    description: Assigns Mod styling in tablist.
+    default: false
+  royaltab.vip_rank:
+    description: Assigns VIP styling in tablist.
+    default: false

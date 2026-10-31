@@ -1,0 +1,51 @@
+# ====================================================================
+#          NEZNAMY TAB Plugin Config Preset for Royal SMP
+#          100% STANDALONE — ZERO RESOURCE PACKS REQUIRED
+#        Drop this into plugins/TAB/config.yml if using TAB
+# ====================================================================
+
+header-footer:
+  enabled: true
+  disable-in-worlds: []
+  header:
+    - "&8&m                                                    &r"
+    - "&#00FDFB&l█▀█ █▀█ █ █ █▀█ █  "
+    - "&#008F8E&l█▀▄ █▄█  █  █▀█ █▄▄"
+    - "&f&l     [ S M P ]"
+    - ""
+    - "&7ONLINE PLAYERS: &a%online%"
+    - ""
+  footer:
+    - ""
+    - "&7WEBSTORE: &#00FDFB&lROYALSMP.TEBEX.IO"
+    - "&7DISCORD: &#4D79FF&lDSC.GG/ROYALSMP"
+    - "&8&m                                                    &r"
+
+tablist-formatting:
+  enabled: true
+  anti-override: true
+  sorting-types:
+    - "GROUPS:founder,admin,mod,vip,_DEFAULT_"
+    - "PLACEHOLDER_A_TO_Z:%player%"
+
+# Rank formatting matching the screenshot ([FOUNDER] red box badge, red name, ping icon)
+groups:
+  founder:
+    tabprefix: "&4&l[&c&lFOUNDER&4&l] &c"
+    tabsuffix: " &a📶"
+  admin:
+    tabprefix: "&6&l[&e&lADMIN&6&l] &6"
+    tabsuffix: " &a📶"
+  mod:
+    tabprefix: "&2&l[&a&lMOD&2&l] &a"
+    tabsuffix: " &a📶"
+  vip:
+    tabprefix: "&6&l[&e&lVIP&6&l] &e"
+    tabsuffix: " &a📶"
+  _DEFAULT_:
+    tabprefix: "&8[&7MEMBER&8] &7"
+    tabsuffix: " &a📶"
+
+placeholders:
+  date-format: "dd.MM.yyyy"
+  time-format: "HH:mm:ss"
